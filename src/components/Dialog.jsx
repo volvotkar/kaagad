@@ -36,7 +36,7 @@ const Dialog = () => {
             <div className="w-full flex justify-between gap-3 text-sm text-center">
                 <div className="bg-slate-700 w-full text-slate-300 rounded-md px-2 py-1 cursor-pointer" onClick={handlePrivacyDialog}>privacy</div>
                 <div className="bg-slate-700 w-full text-slate-300 rounded-md px-2 py-1 cursor-pointer" onClick={handleAboutDialog}>about</div>
-                <a className="bg-slate-700 w-full flex items-center justify-center gap-1 text-slate-300 rounded-md px-2 py-1 cursor-pointer" href="https://github.com/volvotkar/" target="_blank">github <ArrowUpRightIcon className="w-4"/></a>
+                <a className="bg-slate-700 w-full flex items-center justify-center gap-1 text-slate-300 rounded-md px-2 py-1 cursor-pointer" href="https://github.com/volvotkar/kaagad/" target="_blank">github <ArrowUpRightIcon className="w-4"/></a>
             </div>
         </div>
         <div className="w-full text-xs text-center text-slate-300 bg-slate-700 rounded-md px-2 py-1">
