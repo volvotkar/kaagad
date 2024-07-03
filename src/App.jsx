@@ -3,7 +3,8 @@ import './App.css';
 import Dialog from './components/Dialog';
 
 function App() {
-  const initialText = "Type here :) \n\nHit Cmd/Ctrl + K anytime to explore the app. \n";
+  const initialTextDesktop = "Type here :) \n\nHit Cmd/Ctrl + K anytime to explore the app. \n";
+  const initialTextMobile = "Type here :) \n\nHit 'toggle info' anytime to explore the app. \n";
   const [showDialog, setShowDialog] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [text, setText] = useState(()=>{
@@ -54,7 +55,7 @@ function App() {
     <div className='bg-white h-screen flex flex-col'>
     <div className='px-6 flex flex-col h-full  w-full font-mono text-lg font-medium items-center justify-center'>
       {showDialog ? <Dialog /> : <></>}
-      <textarea className='w-full h-full py-8 resize-none focus:outline-none' placeholder={initialText} value={text} onChange={handleTextChange}></textarea>
+      <textarea className='w-full h-full py-8 resize-none focus:outline-none' placeholder={window.innerWidth < 786 ? initialTextMobile : initialTextDesktop} value={text} onChange={handleTextChange}></textarea>
       
     </div>
     <div className='px-8 font-mono font-medium text-sm w-full h-8 bg-slate-900 text-slate-50 flex items-center justify-between'>
