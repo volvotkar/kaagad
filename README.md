@@ -1,8 +1,11 @@
-# React + Vite
+# कागद 
+### [kaa-_gad_] | _noun_
+> #### meaning: paper _(orig. Konkani)_
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Lightweight textarea for note-takers that love less and seek more.
 
-Currently, two official plugins are available:
+Inspired by [Typehere.app](https://typehere.app).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Built using [React](https://react.dev) + [Vite](https://vitejs.dev) and [TailwindCSS](https://tailwindcss.com).
+
+Note: Yes, I know it is entirely possible (and easier) to develop this project using vanilla HTML, CSS, and JS. But I had to practice my React skills and it is just easier to implement some of the additional functionality using React. For anyone wondering how to develop this  _vanilla_ mode, here you go: [कागद Codepen](https://codepen.io/probablyliquid/pen/QWRXPdg).
