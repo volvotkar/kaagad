@@ -53,12 +53,12 @@ function App() {
 
   return (
     <div className='bg-white h-screen flex flex-col'>
-    <div className='px-6 flex flex-col h-full  w-full font-mono text-lg font-medium items-center justify-center'>
+    <div className='px-6 flex flex-col h-full  w-full font-ibm-plex-mono text-lg font-medium items-center justify-center'>
       {showDialog ? <Dialog /> : <></>}
       <textarea className='w-full h-full py-8 resize-none focus:outline-none' placeholder={window.innerWidth < 786 ? initialTextMobile : initialTextDesktop} value={text} onChange={handleTextChange}></textarea>
       
     </div>
-    <div className='px-8 font-mono font-medium text-sm w-full h-8 bg-slate-900 text-slate-50 flex items-center justify-between'>
+    <div className='px-8 font-ibm-plex-mono font-medium text-sm w-full h-8 bg-slate-900 text-slate-50 flex items-center justify-between'>
       <p className='text-xl font-semibold'>कागद</p>
     {isMobile ? (
       <div
