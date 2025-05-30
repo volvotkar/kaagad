@@ -19,7 +19,7 @@ const Dialog = () => {
     <>
     { showPrivacyDialog ?(<PrivacyDialog />) :
         showAboutDialog ? (<AboutDialog />) :
-        (<div className="bg-slate-900 max-w-[400px] text-slate-50 rounded-xl z-10 absolute flex flex-col items-center p-4 px-6 gap-4">
+        (<div className="bg-slate-900 max-w-[400px] text-slate-50 font-switzer rounded-xl z-10 absolute flex flex-col items-center p-4 px-6 gap-4">
        <div className="w-full">
         <div className="flex w-full items-center justify-between">
             <p className="text-xl font-semibold">कागद</p>
@@ -31,9 +31,9 @@ const Dialog = () => {
         </div>
        </div>
          
-       <div className="flex flex-col w-full items-center gap-4">
+       <div className="flex flex-col font-switzer w-full items-center gap-4">
             <p className="w-full text-sm font-medium">a lightweight note taking app for those who love less and seek more.</p>
-            <div className="w-full flex justify-between gap-3 text-sm text-center">
+            <div className="w-full flex justify-between gap-3 text-sm text-center font-switzer">
                 <div className="bg-slate-700 w-full text-slate-300 rounded-md px-2 py-1 cursor-pointer" onClick={handlePrivacyDialog}>privacy</div>
                 <div className="bg-slate-700 w-full text-slate-300 rounded-md px-2 py-1 cursor-pointer" onClick={handleAboutDialog}>about</div>
                 <a className="bg-slate-700 w-full flex items-center justify-center gap-1 text-slate-300 rounded-md px-2 py-1 cursor-pointer" href="https://github.com/volvotkar/kaagad/" target="_blank">github <ArrowUpRightIcon className="w-4"/></a>

@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "ibm-plex-mono": ['"IBM Plex Mono"', "monospace"],
+        "jetbrains-mono": ["JetBrains Mono", "monospace"],
+        switzer: ["Switzer", "sans-serif"],
       },
     },
   },

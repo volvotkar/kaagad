@@ -13,7 +13,7 @@ const PrivacyDialog = () => {
             {showMainDialog ? (
                 <Dialog />
             ) : (
-                <div className="bg-slate-900 max-w-[400px] text-slate-50 rounded-xl z-20 absolute flex flex-col items-center p-4 px-6 gap-4">
+                <div className="bg-slate-900 max-w-[400px] text-slate-50 font-switzer rounded-xl z-20 absolute flex flex-col items-center p-4 px-6 gap-4">
                     <div className="flex flex-col w-full items-center gap-2">
                         <p className="w-full text-md font-semibold">Privacy</p>
                         <p className="w-full text-sm font-medium">this is an online textarea. all your typed data is stored locally on your device. since your data never leaves your device, there is no collection of data whatsoever. to clear your data, clear all your typed content or clear the cache for this page. please keep in mind that clearing the cache for this page will result in all your note contents being erased.</p>
