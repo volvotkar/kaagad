@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Dialog from './components/Dialog';
+import { useTheme } from './context/ThemeContext';
 
 function App() {
   const initialTextDesktop = "Type here :) \n\nHit Cmd/Ctrl + K anytime to explore the app. \n";
@@ -10,6 +11,7 @@ function App() {
   const [text, setText] = useState(()=>{
     return localStorage.getItem('userText');
   });
+  const { theme } = useTheme();
   
   const handleTextChange = (e) => {
     setText(e.target.value);
@@ -52,13 +54,18 @@ function App() {
 
 
   return (
-    <div className='bg-white h-screen flex flex-col'>
-    <div className='px-6 flex flex-col h-full  w-full text-base items-center justify-center'>
+    <div className={`${theme.background} h-screen flex flex-col`}>
+    <div className='px-6 flex flex-col h-full w-full text-base items-center justify-center'>
       {showDialog ? <Dialog /> : <></>}
-      <textarea className='w-full h-full py-8 font-jetbrains-mono resize-none focus:outline-none' placeholder={window.innerWidth < 786 ? initialTextMobile : initialTextDesktop} value={text} onChange={handleTextChange}></textarea>
+      <textarea 
+        className={`w-full h-full py-8 ${theme.font} ${theme.textColor} resize-none focus:outline-none bg-transparent`} 
+        placeholder={window.innerWidth < 786 ? initialTextMobile : initialTextDesktop} 
+        value={text} 
+        onChange={handleTextChange}
+      ></textarea>
       
     </div>
-    <div className='px-8 font-jetbrains-mono font-medium text-sm w-full h-8 bg-slate-900 text-slate-50 flex items-center justify-between'>
+    <div className={`px-8 font-jetbrains-mono font-medium text-sm w-full h-8 ${theme.footerBg} ${theme.footerText} flex items-center justify-between`}>
       <p className='text-xl font-semibold'>कागद</p>
     {isMobile ? (
       <div

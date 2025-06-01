@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         "jetbrains-mono": ["JetBrains Mono", "monospace"],
         switzer: ["Switzer", "sans-serif"],
+        "sentient-serif": ["Sentient", "serif"],
       },
     },
   },
